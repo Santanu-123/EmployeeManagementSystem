@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>EmployeeManagementSystem</display-name>
+  
+  <servlet>
+  	<servlet-name>SaveServlet</servlet-name>
+  	<servlet-class>servlet.SaveServlet</servlet-class>
+  </servlet>
+  
+   <servlet>
+  	<servlet-name>ViewServlet</servlet-name>
+  	<servlet-class>servlet.ViewServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>GetByIdServlet</servlet-name>
+  	<servlet-class>servlet.GetByIdServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<servlet-class>servlet.UpdateServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>UpdateServlet1</servlet-name>
+  	<servlet-class>servlet.UpdateServlet1</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<servlet-class>servlet.DeleteServlet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  	<servlet-name>DeleteServlet1</servlet-name>
+  	<servlet-class>servlet.DeleteServlet1</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>SaveServlet</servlet-name>
+  	<url-pattern>/save</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>ViewServlet</servlet-name>
+  	<url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  
+   <servlet-mapping>
+  	<servlet-name>GetByIdServlet</servlet-name>
+  	<url-pattern>/getById</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateServlet</servlet-name>
+  	<url-pattern>/fetch</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>UpdateServlet1</servlet-name>
+  	<url-pattern>/update</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet</servlet-name>
+  	<url-pattern>/fetchDelete</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+  	<servlet-name>DeleteServlet1</servlet-name>
+  	<url-pattern>/delete</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>Main.html</welcome-file>
+  </welcome-file-list>
+</web-app>
